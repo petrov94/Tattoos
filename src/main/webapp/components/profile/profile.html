@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="artist-info-holder">
+        <div class="cover-holder">
+            <img src="{{artist.cover}}" class="cover-img" alt="" class="cover"/>
+            <img src="{{artist.avatarImg}}" class="avatar-img" alt="" class="cover"/>
+        </div>
+        <div class="artist-info">
+            <h1>{{artist.name}}</h1>
+            <span class="rating">Rating: {{artist.rating}}/10</span>
+            <ul>
+                <li><span>Studio: </span> {{artist.studio}}</li>
+                <li><span>Address: </span> {{artist.address}}</li>
+                <li><span>Phone Number: </span> {{artist.phone}}</li>
+                <li><span>Website: </span> {{artist.website}}</li>
+            </ul>
+        </div>
+    </div>
+    <ul class="tattoo-gallery artist">
+        <li class="gallery-heading"><h1>Gallery</h1></li>
+        <li class="gallery-item" ng-repeat="tattoo in artist.list">
+            <img src="{{tattoo}}">
+        </li>
+    </ul>
+</div>

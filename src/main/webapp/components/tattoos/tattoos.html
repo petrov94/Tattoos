@@ -1,0 +1,8 @@
+<div class="container">
+  <ul class="tattoo-gallery">
+    <li class="gallery-item" ng-repeat="tattoo in tattoos">
+      <img src="{{tattoo.img}}">
+      <p>Made by <a href="#/artists/{{tattoo.artist.id}}">{{tattoo.artist.name}}</a></p>
+    </li>
+  </ul>
+</div>

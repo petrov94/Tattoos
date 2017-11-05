@@ -1,0 +1,17 @@
+<div class="container">
+    <form class="form-signin" ng-show="success===false">
+        <h2 class="form-signin-heading">Please register</h2>
+        <input type="text" class="input-block-level" placeholder="Email address" ng-model="user.email">
+        <input type="password" class="input-block-level" placeholder="Password" ng-model="user.password">
+        <input type="text" class="input-block-level" placeholder="Name" ng-model="user.name">
+        <input type="number" class="input-block-level" placeholder="Phone number" ng-model="user.number">
+        <input type="text" class="input-block-level" placeholder="Country" ng-model="user.country">
+        <input type="text" class="input-block-level" placeholder="City/town" ng-model="user.city">
+        <button class="btn btn-large btn-primary" type="submit" ng-click="ala()">Register</button>
+    </form>
+    <p ng-show="success===true">
+        You have successfully registered. Go back to <a href="#/home">Home</a> or <a href="#/signin">Sign in</a>.
+    </p>
+
+
+</div>
